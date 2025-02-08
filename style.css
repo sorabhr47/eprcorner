@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/**********navigation bar**********/
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: blue;
+}
+
+/* CSS */
+/* consult now button start */
+.bookbtn {
+  background: #c800ff;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.bookbtn:hover,
+.boobtn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.bookbtn:active {
+  opacity: .5;
+}
+
+/* consult now button ends */
+/* container start*/
+header {
+  width: 100vw;
+  height: auto;
+  background-image: url('https://i.postimg.cc/rwwtwBtt/images-2025-02-07-T194458-146.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1%;
+  display: flex;
+  background-position: bottom;
+  /* try with cenere */
+}
+/*left container start*/
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}
+
+.green {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 20% 0;
+}
+
+.green h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  background-color: red;
+}
+
+.green p {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0 0 0 5%;
+
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  text-align: center;
+
+ 
+}
+
+.option {
+  font-size: 1.2em;
+  flex: 1 0 48%;
+  /* This makes the options take up 48% of the container's width */ 
+  margin: 5px 0;
+  padding: 10px;
+  
+  cursor: pointer;
+}
+
+.option:hover {
+  font-weight: bold; 
+}
+
+
+/*right container start*/
+.contact-form {
+  background: #fff;
+  padding: 2%;
+  margin: 10% 5%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-form,
+h1 {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.submit {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit:hover {
+  background: #2980b9;
+}
+
+/*mobile veiw */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 50px;
+  }
+  .float-child {
+    width: 100%;
+  }
+  header{
+    flex-direction: column;
+  }
+  .option {
+    font-size: 1.2rem;
+    flex: 1 0 48%;
+    /* This makes the options take up 48% of the container's width */
+    
+  }
+  .contact-form{
+    margin-top:0;
+  }
+  .navbar,h2{
+    font-size: 1.5rem;
+  }
+}
+
