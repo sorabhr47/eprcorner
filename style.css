@@ -184,7 +184,63 @@ textarea {
 .submit:hover {
   background: #2980b9;
 }
+/*notification box*/
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20%;
+  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
 
+.notification-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #4a90e2;
+  padding: 15px 20px;
+  width: 100%;
+  min-width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-title {
+  font-weight: bold;
+  color: #4a90e2;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+.notification-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 24px; /* Adjust based on text size */
+  flex-grow: 1;
+}
+
+.notification-list {
+  position: absolute;
+  animation: slide 15s linear infinite;
+}
+
+.notification-item {
+  color: #333;
+  height: 24px;
+  line-height: 24px;
+}
+
+@keyframes slide {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-24px); }
+  40% { transform: translateY(-48px); }
+  60% { transform: translateY(-72px); }
+  80% { transform: translateY(-96px); }
+  100% { transform: translateY(0); }
+}
 /*mobile veiw */
 @media screen and (max-width: 768px) {
   body {
@@ -208,5 +264,28 @@ textarea {
   .navbar,h2{
     font-size: 1.5rem;
   }
-}
+  .notification-title {
+    color: #4a90e2;
+    margin: 0 2% 0 0;
+    font-size:0.3em;
+    white-space: nowrap;
+  }
+  .notification-list {
+    position: absolute;
+    animation: slide 15s linear infinite;
+  }
+  .notification-item {
+    color: #333;
+    height: 24px;
+    line-height: 24px;
+    font-size:0.3em;
+  }
+  .notification-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0.2em; /* Adjust based on text size */
+    width:100vw;
+    flex-grow: 1;
+  }
+}  
 
