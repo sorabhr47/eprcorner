@@ -528,3 +528,66 @@ textarea {
       }
     }
 
+ 
+/*epr rquirement ends*/
+requirments {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container-requirments {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+requirments-h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+requirments-ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f9ff;
+  border-left: 5px solid #0073e6;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+li::before {
+  content: "\27A1";
+  color: #0073e6;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+requirments-p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  li {
+    font-size: 0.9em;
+  }
+}
+/*epr rquirement ends*/
+
