@@ -12,9 +12,7 @@ html {
 body {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
- 
 }
-
 
 /**********navigation bar**********/
 .navbar {
@@ -26,13 +24,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+
   color: blue;
 }
 
 /* CSS */
 /* consult now button start */
 .bookbtn {
-  background: #c800ff;
+  background: #3689ff;
   border: 1px solid #FF4742;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
@@ -75,7 +74,7 @@ header {
   background-image: url('https://i.postimg.cc/rwwtwBtt/images-2025-02-07-T194458-146.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 1%;
+  padding:1%;
   display: flex;
   background-position: bottom;
   /* try with cenere */
@@ -84,7 +83,6 @@ header {
 .float-child {
   width: 50%;
   float: left;
-  padding: 20px;
   border: 2px solid red;
 }
 
@@ -99,14 +97,12 @@ header {
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
-  background-color: red;
 }
 
 .green p {
   font-size: 1.2rem;
   text-align: left;
   padding: 0 0 0 5%;
-
 }
 
 .options-container {
@@ -115,8 +111,6 @@ header {
   justify-content: space-between;
   width: 60%;
   text-align: center;
-
- 
 }
 
 .option {
@@ -125,7 +119,7 @@ header {
   /* This makes the options take up 48% of the container's width */ 
   margin: 5px 0;
   padding: 10px;
-  
+
   cursor: pointer;
 }
 
@@ -133,26 +127,27 @@ header {
   font-weight: bold; 
 }
 
-
 /*right container start*/
-.contact-form {
+.header-contact-form { 
+  margin: 15% 2%;
+  
   background: #fff;
   padding: 2%;
-  margin: 10% 5%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
 }
 
-.contact-form,
+.header-contact-form,
 h1 {
   margin-bottom: 10px;
   font-size: 1em;
 }
 
-.form-group {
-  margin-bottom: 5px;
+.form-group { 
   text-align: left;
+  width: 100%;
+  margin-bottom: 4%;
 }
 
 input[type="text"],
@@ -168,12 +163,14 @@ textarea {
 }
 
 textarea {
-  resize: none;
-  height: 80px;
+resize: none;
+  height: 90px;
+  
 }
 
 .submit {
-  width: 100%;
+  width: 30%;
+  margin-right:250px;
   background: #3498db;
   color: white;
   padding: 12px;
@@ -187,7 +184,8 @@ textarea {
   background: #2980b9;
 }
 /*notification box*/
-.notification {
+.notification {  
+  margin-top:20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,12 +199,12 @@ textarea {
   align-items: center;
   background: #ffffff;
   border: 2px solid #4a90e2;
-  padding: 15px 20px;
+  padding: 10px 0px 10px 10px;
   width: 100%;
   min-width: 90%;
   max-width: 400px;
   border-radius: 8px;
-  overflow: hidden;
+  overflow:hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -220,7 +218,7 @@ textarea {
 .notification-wrapper {
   position: relative;
   overflow: hidden;
-  height: 24px; /* Adjust based on text size */
+  height: 60px; /* Adjust based on text size */
   flex-grow: 1;
 }
 
@@ -303,111 +301,111 @@ textarea {
 /*epr process ends*/
 /*epr to me*/
 .eprtome {
-      background-color: #f8f9fa;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
+  background-color: #f8f9fa;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-    .container-me {
-      max-width: 1200px;
-      width: 100%;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 40px;
-    }
+.container-me {
+  max-width: 1200px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
 
-    .header-me {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+.header-me {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    .header-me h1 {
-      font-size: 2rem;
-      color: #333;
-    }
+.header-me h1 {
+  font-size: 2rem;
+  color: #333;
+}
 
-    .header-me p {
-      font-size: 1rem;
-      color: #666;
-    }
+ .header-me p {
+  font-size: 1rem;
+  color: #666;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
+ .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
 
-    .grid-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
-    .card {
-      background-color: #ffffff;
-      border: 2px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: box-shadow 0.3s;
-    }
+.card {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s;
+}
 
-    .card:hover {
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    }
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .card-title {
-      font-size: 1.5rem;
-      color: #2c3e50;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+.card-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-    .card-description {
-      font-size: 1rem;
-      color: #7f8c8d;
-    }
+.card-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
 
-    .image img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
 
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
 
-    @media (max-width: 600px) {
-      .container-me {
-        padding: 20px;
-      }
+@media (max-width: 600px) {
+  .container-me {
+    padding: 20px;
+  }
 
-      .card-title {
-        font-size: 1.25rem;
-      }
-    }
-    @keyframes slideIn {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-    .slide-in {
-      animation: slideIn 1s ease-in-out forwards;
-    }
+.slide-in {
+  animation: slideIn 1s ease-in-out forwards;
+}
 /*epr to me end*/
 /*mobile veiw */
 @media screen and (max-width: 768px) {
@@ -424,7 +422,7 @@ textarea {
     font-size: 1.2rem;
     flex: 1 0 48%;
     /* This makes the options take up 48% of the container's width */
-    
+
   }
   .contact-form{
     margin-top:0;
@@ -432,28 +430,29 @@ textarea {
   .navbar,h2{
     font-size: 1.5rem;
   }
+  .submit {
+    width: 100%;
+  }
+  .notification-box {
+    flex-direction: column; 
+    align-items: center;
+    min-width: 95%;
+  }
   .notification-title {
-    color: #4a90e2;
     margin: 0 2% 0 0;
     font-size:0.3em;
-    white-space: nowrap;
   }
-  .notification-list {
-    position: absolute;
-    animation: slide 15s linear infinite;
-  }
+  
   .notification-item {
-    color: #333;
-    height: 24px;
-    line-height: 24px;
     font-size:0.3em;
   }
+  .notification-list {
+    padding:0 10px 0 5%;
+  }
+  
   .notification-wrapper {
-    position: relative;
-    overflow: hidden;
-    height: 0.2em; /* Adjust based on text size */
+    height: 2em; /* Adjust based on text size */
     width:100vw;
-    flex-grow: 1;
   }
 }  
 /*epr process starts*/
@@ -473,8 +472,7 @@ textarea {
 /*epr process ends*/
 
 /*epr rule*/
-    eprrule {
-      
+  eprrule {
       background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
@@ -515,21 +513,19 @@ textarea {
       color: #555;
     }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
+@media (max-width: 600px) {
+  
 
-      .rule h2 {
-        font-size: 1.1em;
-      }
+  .rule h2 {
+    font-size: 1.1em;
+  }
 
-      .rule p {
-        font-size: 0.9em;
-      }
-    }
+  .rule p {
+    font-size: 0.9em;
+  }
+}
 
- 
+
 /*epr rquirement ends*/
 requirments {
   font-family: 'Arial', sans-serif;
@@ -581,11 +577,7 @@ requirments-p {
   color: #555;
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
+@media (max-width: 600px) 
   li {
     font-size: 0.9em;
   }
@@ -719,5 +711,15 @@ h1 {
       text-align: center;
   }
 }
+.contact-form { 
+  
+  background: #fff;
+  padding: 1%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
 
+/*footer ends*/
 
+/*mobile veiw */
